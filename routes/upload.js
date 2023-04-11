@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   const request = require('request');
-  request('https://10.217.4.124:8080', function (error, response, body) {
+  request('https://php-route-image-uploader.apps-crc.testing/index.php', function (error, response, body) {//https://10.217.4.124:8080
     console.error('error:', error); // Print the error if one occurred
     console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
     console.log('body:', body); // Print the HTML for the Google homepage.
