@@ -19,7 +19,7 @@ router.get('/', function(req, res, next) {
 
 
 router.get('/env', function(req, res, next) {
-    res.send(process.env.service-host-env);
+    res.send(process.env.service_host_env);
 });
 
 
